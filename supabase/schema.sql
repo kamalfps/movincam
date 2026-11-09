@@ -22,8 +22,8 @@ create policy "Owner can manage quotations"
 on public.quotations
 for all
 to authenticated
-using (auth.jwt() ->> 'email' = 'OWNER_EMAIL@example.com')
-with check (auth.jwt() ->> 'email' = 'OWNER_EMAIL@example.com');
+using (auth.jwt() ->> 'email' = 'kamalmahadevwala09@gmail.com')
+with check (auth.jwt() ->> 'email' = 'kamalmahadevwala09@gmail.com');
 
 create index if not exists quotations_created_at_idx
 on public.quotations (created_at desc);
